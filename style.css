@@ -1,0 +1,1174 @@
+
+        
+       /* ============================
+   MODERN ANIMATED NAVBAR
+   ============================ */
+
+.navbar {
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 7%;
+
+    background: rgba(255,255,255,0.95);
+
+    backdrop-filter: blur(10px);
+
+    border-bottom: 3px solid;
+
+    animation: borderColor 6s infinite;
+
+}
+
+
+/* Animated Border Colours */
+
+@keyframes borderColor {
+
+    0% {
+        border-color: #ff0055;
+    }
+
+    25% {
+        border-color: #00c3ff;
+    }
+
+    50% {
+        border-color: #00ff88;
+    }
+
+    75% {
+        border-color: #ffd000;
+    }
+
+    100% {
+        border-color: #ff0055;
+    }
+
+}
+
+
+
+/* Logo */
+
+.navbar .logo {
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+}
+
+
+.navbar .logo img {
+
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+
+}
+
+
+.navbar .logo h1 {
+
+    color: #123c69;
+
+    font-size: 22px;
+
+}
+
+
+
+/* Navigation Links */
+
+.nav-links {
+
+    display: flex;
+
+    gap: 25px;
+
+}
+
+
+
+.nav-links a {
+
+    position: relative;
+
+    text-decoration: none;
+
+    color: #222;
+
+    font-weight: bold;
+
+    padding: 10px 15px;
+
+    border-radius: 25px;
+
+    transition: 0.4s;
+
+}
+
+
+
+/* Hover Background */
+
+.nav-links a:hover {
+
+    color: white;
+
+    background: linear-gradient(
+        45deg,
+        #ff0055,
+        #00c3ff,
+        #00ff88
+    );
+
+    transform: translateY(-4px);
+
+}
+
+
+
+/* Animated Underline */
+
+.nav-links a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: 3px;
+
+    width: 0%;
+
+    height: 3cm;
+
+    background: linear-gradient(
+        90deg,
+        #ff0055,
+        #00c3ff,
+        #00ff88
+    );
+
+    transition: 0.4s;
+
+    transform: translateX(-50%);
+
+}
+
+
+
+.nav-links a:hover::after {
+
+    width: 80%;
+
+}
+
+
+
+/* Active Page */
+
+.nav-links a.active {
+
+    color: #2486d1;
+
+}
+
+
+
+/* Mobile Navigation */
+
+@media(max-width:800px){
+
+    .navbar{
+
+        flex-direction: column;
+
+        gap:20px;
+
+    }
+
+
+    .nav-links{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:10px;
+
+    }
+
+}
+                        /* FOR HOME PAGE */ 
+            /* ===================================== GENERAL===================================== */
+
+
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color:black;
+    line-height: 1.6;
+    background: #e6dfdf;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =====================================
+   HEADER
+   ===================================== */
+
+.header {
+    width: 100%;
+    padding: 15px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 20cm;
+    height: 20cm;
+    object-fit: contain;
+}
+
+.logo h1 {
+    color: #123c69;
+    font-size: 22px;
+}
+
+.logo p {
+    font-size: 11px;
+    color: #777;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #333;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #1976d2;
+}
+
+
+/* =====================================
+   HERO
+   ===================================== */
+
+.hero {
+    min-height: 650px;
+
+    background-image:
+        linear-gradient(
+            rgba(5, 30, 55, 0.72),
+            rgba(5, 30, 55, 0.72)
+        ),
+        url("school.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 7%;
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.welcome {
+    color: #64d8cb;
+    font-weight:bold;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    font-size: 58px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.hero h2 span {
+    color: #64d8cb;
+}
+
+.hero p:not(.welcome) {
+    font-size: 18px;
+    max-width: 650px;
+    color: #eeeeee;
+}
+
+.hero-buttons {
+    margin-top: 35px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 14px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #64d8cb;
+    color: #073b4c;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: white;
+    color: #2c2cbd;
+}
+
+
+/* =====================================
+   INTRODUCTION
+   ===================================== */
+
+.intro {
+    padding: 100px 7%;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.intro-image {
+    flex: 1;
+}
+
+.intro-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.section-label {
+    color: #1976d2;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.intro h2,
+.section-heading h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.intro h2 span,
+.section-heading h2 span {
+    color: #3f7cb9;
+}
+
+.intro-text p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    color: #1976d2;
+    font-weight: bold;
+}
+
+
+/* =====================================
+   SCHOOL SECTIONS
+   ===================================== */
+
+.school-sections {
+    background: #f5f8fc;
+    padding: 100px 7%;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 50px;
+}
+
+.section-heading > p:last-child {
+    color: #777;
+}
+
+.section-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.school-card {
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+    transition: 0.3s;
+    border-top: 5px solid;
+}
+
+.school-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.nursery {
+    border-color: #ff9800;
+}
+
+.primary {
+    border-color:RED;
+}
+
+.secondary {
+    border-color: #682121;
+}
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.school-card h3 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.school-card p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.school-card h4 {
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.school-card ul {
+    list-style: none;
+}
+
+.school-card li {
+    padding: 7px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.class-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.class-grid span {
+    padding: 10px;
+    background: #f1f5f9;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+/* =====================================
+   WHY CHOOSE US
+   ===================================== */
+
+.why-us {
+    padding: 100px 7%;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.feature {
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #eeeeee;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.feature-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.feature h3 {
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: #777;
+}
+
+
+/* =====================================
+   CALL TO ACTION
+   ===================================== */
+
+.cta {
+    padding: 90px 7%;
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(18, 60, 105, 0.95),
+            rgba(18, 60, 105, 0.95)
+        );
+        
+    color: white;
+}
+
+.cta h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.cta h2 span {
+    color: #64d8cb;
+}
+
+.cta p:not(.section-label) {
+    max-width: 650px;
+    margin: auto;
+    color: #dce7f2;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background: #64d8cb;
+    color: #073b4c;
+    font-weight: bold;
+}
+
+
+/* =====================================
+   FOOTER
+   ===================================== */
+
+footer {
+    background: #101820;
+    color: white;
+}
+
+.footer-content {
+    padding: 60px 7%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px;
+}
+
+.footer-content h3 {
+    color: #64d8cb;
+    margin-bottom: 10px;
+}
+
+.footer-content h4 {
+    margin-bottom: 15px;
+}
+
+.footer-content a {
+    display: block;
+    color: #bbb;
+    margin: 7px 0;
+}
+
+.footer-content a:hover {
+    color: #64d8cb;
+}
+
+.footer-content p {
+    color: #bbb;
+}
+
+.copyright {
+    border-top: 1px solid #26343e;
+    padding: 20px;
+    text-align: center;
+    color: #888;
+}
+
+
+/* =====================================
+   MOBILE RESPONSIVE
+   ===================================== */
+
+@media (max-width: 900px) {
+
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 42px;
+    }
+
+    .intro {
+        flex-direction: column;
+    }
+
+    .section-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .hero {
+        min-height: 550px;
+        padding: 60px 6%;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    .intro h2,
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        text-align: center;
+    }
+
+}
+            /* FOR HOME PAGE */ 
+        }
+        /*FOR CONTACT US */ 
+        .contact-intro,
+.contact-info,
+.contact-form,
+.location {
+    padding: 50px;
+    text-align: center;
+      background-color: #a31010;
+}
+
+.contact-intro p,
+.location p {
+    max-width: 500px;
+    margin: auto;
+    line-height: 1.7;
+    border-radius: 5px;
+    background-color: #00838f;
+    
+    
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+   
+}
+
+.contact-info h2 {
+    width: 150%;
+     background-color: #0738a0;
+    transform: scale(0.95);
+}
+
+.contact-box {
+    width: 220px;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+     background-color: #c6c1cf;
+    transform: scale(0.95);
+}
+h2{
+    text-align: center;
+    background-color: #0d47a1;
+    border-radius: 20px; 
+    font-style: padding ;
+}
+.contact-form form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.contact-form label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    padding: 12px;
+    border: tomato;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+     background-color: #13cf81;
+}
+
+.location {
+    background-color: #f5f5f5;
+}
+ /* CSS FOR CONTACT US  ENDS HEAR 
+ NEXT IS ABOUT PAGE*/ 
+ .about,
+.history,
+.vision-mission,
+.values,
+.facilities {
+    padding: 50px;
+    text-align: center;
+}
+
+.about-image {
+    width: 500px;
+    max-width: 90%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.about p,
+.history p,
+.vision-mission p,
+.facilities p {
+    max-width: 800px;
+    margin: 15px auto;
+    line-height: 1.7;
+}
+
+.vision-mission {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.vision-mission div {
+    width: 40%;
+    padding: 25px;
+}
+
+.values ul {
+    list-style: none;
+    padding: 0;
+}
+
+.values li {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 5px;
+}
+/* CSS FOR ABOUT PAGE   ENDS HEAR 
+ NEXT IS ADMISSION*/ 
+ /* ==============================
+   ADMISSIONS PAGE
+   ============================== */
+
+.admissions {
+    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.admissions h2 {
+    color: #0d47a1;
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.admissions p {
+    max-width: 800px;
+    margin: 15px auto;
+    line-height: 1.8;
+    color: #444;
+}
+
+.admission-image {
+    width: 500px;
+    max-width: 90%;
+    height: 280px;
+    object-fit:contain;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+}
+
+
+/* ==============================
+   ADMISSION REQUIREMENTS
+   ============================== */
+
+.requirements {
+    background-color: #ffffff;
+    padding: 55px 20px;
+    text-align: center;
+}
+
+.requirements h2 {
+    color: black;
+    font-size: 30px;
+}
+
+.requirements p {
+    color: #555;
+}
+
+.requirements ul {
+    max-width: 650px;
+    margin: 25px auto;
+    padding: 0;
+    list-style: none;
+}
+
+.requirements li {
+    background-color: #e8f5e9;
+    color: #1b5e20;
+    margin: 10px 0;
+    padding: 14px;
+    border-left: 5px solid #2e7d32;
+    border-radius: 5px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.requirements li:hover {
+    transform: translateX(8px);
+    background-color: #c8e6c9;
+}
+
+
+/* ==============================
+   SCHOOL FEES
+   ============================== */
+
+.fees {
+    background: linear-gradient(135deg, #fff3e0, #ffffff);
+    padding: 55px 20px;
+    text-align: center;
+}
+
+.fees h2 {
+    color: #ff0000;
+    font-size: 30px;
+}
+.fees-box {
+    display: inline-block;
+    width: 230px;
+    margin: 10px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+.date-box:hover {
+    transform: translateY(-8px);
+}
+
+.fees-box h2 {
+    color: blanchedalmond;
+}
+
+.fees-box p {
+    color: red;
+    font-weight: bold;
+}
+
+
+/* ==============================
+   IMPORTANT DATES
+   ============================== */
+
+.dates {
+    background-color: #f3e5f5;
+    padding: 55px 20px;
+    text-align: center;
+}
+
+.dates h2 {
+    color: #ee0f0f;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.date-box {
+    display: inline-block;
+    width: 230px;
+    margin: 10px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+.date-box:hover {
+    transform: translateY(-8px);
+}
+
+.date-box h3 {
+    color: #7b1fa2;
+}
+
+.date-box p {
+    color: #555;
+    font-weight: bold;
+}
+
+
+/* ==============================
+   WHY CHOOSE US
+   ============================== */
+
+.why-us {
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    padding: 55px 20px;
+    text-align: center;
+}
+
+.why-us h2 {
+    color: #00ff6a;
+    font-size: 30px;
+}
+
+.why-us p {
+    max-width: 750px;
+    margin: 15px auto;
+    line-height: 1.7;
+    color: #444;
+}
+
+.why-us ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 25px auto;
+}
+
+.why-us li {
+    display: inline-block;
+    background-color: #00838f;
+    color: white;
+    padding: 12px 18px;
+    margin: 6px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.why-us li:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+}
+
+
+/* ==============================
+   ADMISSIONS CONTACT
+   ============================== */
+
+.admission-contact {
+    background: linear-gradient(135deg, #263238, #37474f);
+    color: white;
+    padding: 55px 20px;
+    text-align: center;
+}
+
+.admission-contact h2 {
+    color: #ffca28;
+    font-size: 30px;
+   
+}
+
+.admission-contact p {
+    margin: 12px;
+}
+
+.admission-contact strong {
+    color: #80cbc4;
+}
+
+
+/* ==============================
+   FOOTER
+   ============================== */
+
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+/* STAFF CSS*/ 
+h7{
+    color: #2486d1;
+    font-size: larger;
+    font-family: fantasy;
+    
+  
+}
+.staff-card h4 {
+    font-family:Arial, Helvetica, sans-serif;
+    font: 100px;
+    font-style:italic;
+    font-weight: bold;
+    color: rgb(22, 21, 11);
+    
+}
+.staff-card p {
+    font-family:Arial, Helvetica, sans-serif;
+    font: 100px;
+    font-weight: bold;
+    color: #00ff6a;
+    
+}
+
+.staff-card {
+    width: auto;
+    padding: 15px;
+    background: white;
+  /* border: 1px solid #ddd;*/
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+   /* overflow: hidden;*/
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+   margin: 0 auto;
+   box-sizing: border-box;
+}
+.staff-card img{
+    width:100%; 
+    height:350px; 
+  object-fit:cover;
+      border-radius: 15px;
+      /*display: block;*/ 
+}
+  .staff-container{ 
+        display: grid; 
+        grid-template-columns: repeat (3,minmax(280px,350px)); 
+        gap : 5px; 
+       padding: 0px;
+        justify-content: center;
+        margin-top: 10px;
+        flex-wrap: wrap;
+     }
+     @media(max-width:800px) {
+        .staff-container {
+            grid-template-columns: repeat(2,1fr);
+        }
+     }
+     @media (max-with:500px){
+.staff-container{
+    grid-template-columns: 1fr;
+}
+     }
+        
+     
