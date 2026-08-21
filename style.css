@@ -293,7 +293,8 @@ nav a.active {
    ===================================== */
 
 .hero {
-    min-height: 650px;
+        width:100%; 
+    min-height: 100%;
 
     background-image:
         linear-gradient(
@@ -314,7 +315,7 @@ nav a.active {
 }
 
 .hero-content {
-    max-width: 750px;
+    max-width: 100% ;
 }
 
 .welcome {
@@ -460,6 +461,8 @@ nav a.active {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
+        width:100%; 
+        padding:30px; 
 }
 
 .school-card {
@@ -1179,6 +1182,7 @@ h7{
         grid-template-columns: 1fr !important;
         gap: 25px;
         width: 100%;
+        padding:20px;   
     }
 
     .school-card {
