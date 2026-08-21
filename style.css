@@ -1170,4 +1170,18 @@ h7{
     grid-template-columns: 1fr;
 }
      }
+@media (max-width: 600px) {
+
+    .section-cards {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        gap: 25px;
+        width: 100%;
+    }
+
+    .school-card {
+        width: 100%;
+    }
+
+}
      
