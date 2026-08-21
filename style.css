@@ -442,7 +442,7 @@ nav a.active {
 
 .school-sections {
     background: #f5f8fc;
-    padding: 100px 7%;
+    padding: 50px 5%;
 }
 
 .section-heading {
@@ -456,12 +456,14 @@ nav a.active {
 }
 
 .section-cards {
+        
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
 
 .school-card {
+        width:100%; 
     background: white;
     padding: 35px;
     border-radius: 20px;
