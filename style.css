@@ -1170,5 +1170,13 @@ h7{
     grid-template-columns: 1fr;
 }
      }
-        
+/* edit phone */
+@media (max-width: 600px) {
+
+    .section-cards {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+}
      
