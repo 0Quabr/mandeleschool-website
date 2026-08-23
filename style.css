@@ -931,6 +931,25 @@ header nav a {
     }
 
 }
+@media (max-width: 600px) {
+
+    .vision-mission {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 25px;
+    }
+
+    .vision-mission div {
+        width: 100% !important;
+        padding: 30px 20px;
+    }
+
+    .vision-mission p {
+        max-width: 100%;
+    }
+
+}
 /* CSS FOR ABOUT PAGE   ENDS HEAR 
  NEXT IS ADMISSION*/ 
  /* ==============================
