@@ -781,12 +781,13 @@ footer {
      background-color: #c6c1cf;
     transform: scale(0.95);
 }
-h2{
+/*h2{
     text-align: center;
     background-color: #0d47a1;
     border-radius: 20px; 
     font-style: padding ;
 }
+*/ 
 .contact-form form {
     max-width: 600px;
     margin: auto;
@@ -810,6 +811,7 @@ h2{
 }
 
 .contact-form button {
+        display:flex; 
     margin-top: 20px;
     padding: 12px;
     border: tomato;
@@ -872,7 +874,7 @@ header nav a {
     margin: 25px auto;
 }
 .vision-mission {
-    display: grid;
+    display:grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
