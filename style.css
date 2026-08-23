@@ -1194,10 +1194,28 @@ h7{
     display: inline-block;
     padding: 12px 20px;
     background: #25D366;
-    color: white;
+    color: black;
     text-decoration: none;
     border-radius: 25px;
             }
+.call-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #1e88e5;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+          }
+.email-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #e74c3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+        }
+
 * {
     box-sizing: border-box;
 }
