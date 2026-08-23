@@ -1234,7 +1234,7 @@ h7{
       /*display: block;*/ 
 }
   .staff-container{ 
-        display: grid; 
+        display:flex; 
         grid-template-columns: repeat (3,minmax(280px,350px)); 
         gap : 5px; 
        padding: 0px;
@@ -1255,7 +1255,7 @@ h7{
 @media (max-width: 600px) {
 
     .section-cards {
-        display: grid;
+        display: flex;
         grid-template-columns: 1fr !important;
         gap: 25px;
         width: 100%;
