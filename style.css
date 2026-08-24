@@ -903,7 +903,7 @@ header nav a {
     margin: 25px auto;
 }
 .vision-mission {
-    display:grid;
+    display:flex;
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
 }
@@ -944,7 +944,7 @@ header nav a {
     .vision-mission,
     .values,
     .facilities {
-        padding: 40px 5%;
+        padding: 15px 5%;
     }
 
     .about-image {
