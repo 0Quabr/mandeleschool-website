@@ -1365,7 +1365,7 @@ a.email-btn {
     list-style: none;
 }
 
-.menu-links {
+.nav-links {
     position: absolute;
     right: 0;
     top: 40px;
@@ -1375,13 +1375,13 @@ a.email-btn {
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-.menu-links a {
+.nav-links a {
     display: block;
     padding: 12px;
     text-decoration: none;
     color: black;
 }
 
-.menu-links a:hover {
+.nav-links a:hover {
     background: #eee;
 }
