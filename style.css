@@ -1354,3 +1354,34 @@ a.email-btn {
     font-weight: bold;
         }
 
+/*Button */ 
+.menu {
+    position: relative;
+}
+
+.menu summary {
+    cursor: pointer;
+    font-size: 25px;
+    list-style: none;
+}
+
+.menu-links {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background: white;
+    width: 180px;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.menu-links a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu-links a:hover {
+    background: #eee;
+}
